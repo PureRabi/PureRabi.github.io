@@ -1,218 +1,661 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Hyze&#039;s Learning</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Hyze&#039;s Learning"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hyze&#039;s Learning"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Start out mission"><meta property="og:type" content="blog"><meta property="og:title" content="Hyze&#039;s Learning"><meta property="og:url" content="https://purerabi.github.io/"><meta property="og:site_name" content="Hyze&#039;s Learning"><meta property="og:description" content="Start out mission"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://purerabi.github.io/img/og_image.png"><meta property="article:author" content="Hyze Liang"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://purerabi.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://purerabi.github.io"},"headline":"Hyze's Learning","image":["https://purerabi.github.io/img/og_image.png"],"author":{"@type":"Person","name":"Hyze Liang"},"publisher":{"@type":"Organization","name":"Hyze's Learning","logo":{"@type":"ImageObject","url":"https://purerabi.github.io/img/logo.svg"}},"description":"Start out mission"}</script><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
-  (function () {
-      function switchTab() {
-          if (!location.hash) {
-            return;
-          }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-          const id = '#' + CSS.escape(location.hash.substring(1));
-          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
-          if (!$tabMenu) {
-            return;
-          }
+<link rel="stylesheet" href="/css/main.css">
 
-          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
-          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
-          Array.from($tabMenuContainer.querySelectorAll('a'))
-              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
-              .forEach($content => $content.classList.add('is-hidden'));
 
-          if ($tabMenu) {
-              $tabMenu.parentElement.classList.add('is-active');
-          }
-          const $activeTab = document.querySelector(id);
-          if ($activeTab) {
-              $activeTab.classList.remove('is-hidden');
-          }
-      }
-      switchTab();
-      window.addEventListener('hashchange', switchTab, false);
-  })();
-  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Hyze&#039;s Learning" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-11-05T08:18:43.000Z" title="2023/11/5 16:18:43">2023-11-05</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-11-05T10:07:21.328Z" title="2023/11/5 18:07:21">2023-11-05</time></span><span class="level-item">20 minutes read (About 2958 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/11/05/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89/">概率论与随机过程（一）</a></p><div class="content"><h1 id="概率论与随机过程"><a href="#概率论与随机过程" class="headerlink" title="概率论与随机过程"></a>概率论与随机过程</h1><h2 id="一维随机变量"><a href="#一维随机变量" class="headerlink" title="一维随机变量"></a>一维随机变量</h2><h3 id="离散型随机变量"><a href="#离散型随机变量" class="headerlink" title="离散型随机变量"></a>离散型随机变量</h3><p>&emsp;离散型随机变量的基本定义是</p>
-<ol>
-<li>对于任意的自然数$n$，有$p_n\ge0$;</li>
-<li>$\sum\limits_np_n=1$.</li>
-</ol>
-<h4 id="Bernoulli分布"><a href="#Bernoulli分布" class="headerlink" title="Bernoulli分布"></a>Bernoulli分布</h4><p>&emsp;伯努利分布是最基础的离散型分布之一，如果随机变量X的分布律为：</p>
-<script type="math/tex; mode=display">P(X = x) = \begin{cases}
-p & \text{if } x=1, \\
-1-p & \text{if } x=0.
-\end{cases}</script><p>记作$X \sim B(1,p)$。</p>
-<h4 id="二项分布"><a href="#二项分布" class="headerlink" title="二项分布"></a>二项分布</h4><p>&emsp;如果一个随机变量X的分布律为<script type="math/tex">P\{X=k\}=C_{n}^{k}p^{k}(1-p)^{n-k}</script>我们就认为随机变量服从参数为$(n,p)$的二项分布，记作$X \sim B(n,p)$。由此可得，二项分布实际上就是多次独立重复的Bernoulli实验。</p>
-<h4 id="Poisson分布"><a href="#Poisson分布" class="headerlink" title="Poisson分布"></a>Poisson分布</h4><p>&emsp;泊松分布在随机过程里非常重要，如果一个随机变量X的分布律为<script type="math/tex">P\{X=k\} = \frac{ {\lambda^k e^{-\lambda} } }{ {k!} }</script>我们就认为随机变量服从参数为$\lambda$的Poisson分布，记作$X \sim \pi(\lambda)$</p>
-<h4 id="几何分布"><a href="#几何分布" class="headerlink" title="几何分布"></a>几何分布</h4><p>&emsp;若随机变量X的分布律为<script type="math/tex">P\{X=k\}=q^{k-1}p</script>我们认为随机变量X服从参数为$p$的i几何分布。可以简单的认为几何分布就是进行$k-1$次失败实验后成功了一次，反之亦然。</p>
-<h3 id="连续型随机变量"><a href="#连续型随机变量" class="headerlink" title="连续型随机变量"></a>连续型随机变量</h3><p>&emsp;连续型随机变量最基本的定义是从积分出发的，就是<script type="math/tex">F(x)= \int_{-\infty}^{x}f(t)dt</script>其中，函数$f(x)$是概率密度函数，$F(x)$是分布函数。</p>
-<h4 id="均匀分布"><a href="#均匀分布" class="headerlink" title="均匀分布"></a>均匀分布</h4><p>&emsp;若随机变量X的密度函数为$$<br>f(x) =<br>\begin{cases}<br>\frac{1}{b-a} &amp; \text{for } a \leq x \leq b, \\<br>0 &amp; \text{otherwise}.<br>\end{cases}</p>
-<script type="math/tex; mode=display">则称随机变量X服从区间$[a,b]$上的均匀分布，记作$X\sim U[a,b]$。均匀分布的分布函数如下所示：$$F(x) =
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"purerabi.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="Start out mission">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hyze&#39;s Learning">
+<meta property="og:url" content="https://purerabi.github.io/index.html">
+<meta property="og:site_name" content="Hyze&#39;s Learning">
+<meta property="og:description" content="Start out mission">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Hyze Liang">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://purerabi.github.io/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Hyze's Learning</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Hyze's Learning</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://purerabi.github.io/2023/11/05/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Hyze Liang">
+      <meta itemprop="description" content="Start out mission">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hyze's Learning">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/11/05/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89/" class="post-title-link" itemprop="url">概率论与随机过程（一）</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2023-11-05 16:18:43 / Modified: 21:48:44" itemprop="dateCreated datePublished" datetime="2023-11-05T16:18:43+08:00">2023-11-05</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="概率论与随机过程">概率论与随机过程</h1>
+<h2 id="一维随机变量">一维随机变量</h2>
+<h3 id="离散型随机变量">离散型随机变量</h3>
+<p> 离散型随机变量的基本定义是</p>
+<ul>
+<li>对于任意的自然数<span class="math inline">\(n\)</span>，有<span
+class="math inline">\(p_n\ge0\)</span>;</li>
+<li><span class="math inline">\(\sum\limits_np_n=1\)</span>.</li>
+</ul>
+<h4 id="bernoulli分布">Bernoulli分布</h4>
+<p> 伯努利分布是最基础的离散型分布之一，如果随机变量X的分布律为： <span
+class="math display">\[ P(X = x) = \begin{cases}
+p &amp; \text{if } x=1, \\
+1-p &amp; \text{if } x=0.
+\end{cases} \]</span> 记作<span class="math inline">\(X \sim
+B(1,p)\)</span>。</p>
+<h4 id="二项分布">二项分布</h4>
+<p> 如果一个随机变量X的分布律为<span
+class="math display">\[P\{X=k\}=C_{n}^{k}p^{k}(1-p)^{n-k}\]</span>我们就认为随机变量服从参数为<span
+class="math inline">\((n,p)\)</span>的二项分布，记作<span
+class="math inline">\(X \sim
+B(n,p)\)</span>。由此可得，二项分布实际上就是多次独立重复的Bernoulli实验。</p>
+<h4 id="poisson分布">Poisson分布</h4>
+<p> 泊松分布在随机过程里非常重要，如果一个随机变量X的分布律为<span
+class="math display">\[P\{X=k\} = \frac{ {\lambda^k e^{-\lambda} } }{
+{k!} }\]</span>我们就认为随机变量服从参数为<span
+class="math inline">\(\lambda\)</span>的Poisson分布，记作<span
+class="math inline">\(X \sim \pi(\lambda)\)</span></p>
+<h4 id="几何分布">几何分布</h4>
+<p> 若随机变量X的分布律为<span
+class="math display">\[P\{X=k\}=q^{k-1}p\]</span>我们认为随机变量X服从参数为<span
+class="math inline">\(p\)</span>的i几何分布。可以简单的认为几何分布就是进行<span
+class="math inline">\(k-1\)</span>次失败实验后成功了一次，反之亦然。</p>
+<h3 id="连续型随机变量">连续型随机变量</h3>
+<p> 连续型随机变量最基本的定义是从积分出发的，就是<span
+class="math display">\[F(x)=
+\int_{-\infty}^{x}f(t)dt\]</span>其中，函数<span
+class="math inline">\(f(x)\)</span>是概率密度函数，<span
+class="math inline">\(F(x)\)</span>是分布函数。</p>
+<h4 id="均匀分布">均匀分布</h4>
+<p> 若随机变量X的密度函数为 <span class="math display">\[f(x) =
 \begin{cases}
-0 & \text{for } x < a, \\
-\frac{x - a}{b - a} & \text{for } a \leq x < b, \\
-1 & \text{for } x \geq b.
-\end{cases}$$易得，分布函数是由密度函数积分得来的。
-
-#### 指数分布
-
-随机变量X的密度函数为</script><p>f(x; \lambda) =<br>\begin{cases}<br>\lambda e^{-\lambda x} &amp; x \geq 0, \\<br>0 &amp; x &lt; 0.<br>\end{cases}</p>
-<script type="math/tex; mode=display">并且分布函数为</script><p>F(x; \lambda) =<br>\begin{cases}<br>1 - e^{-\lambda x} &amp; x \geq 0, \\<br>0 &amp; x &lt; 0.<br>\end{cases}</p>
-<script type="math/tex; mode=display">其中，$\lambda>0$是常数，随机变量X服从参数为$\lambda$的指数分布。指数分布具有无记忆性，也就是说若已知寿命长于S年，再过T年的概率是和年龄S无关的。
-
-#### 正态分布
-
-&emsp;</script><p>f(x; \mu, \sigma) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2} \left(\frac{x-\mu}{\sigma}\right)^2}</p>
-<script type="math/tex; mode=display">当正态分布的均值为0，方差为1时，我们认为此时$X$服从标准正态分布。</script><p>f(x) = \frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}}</p>
-<script type="math/tex; mode=display">
-
-#### Gamma分布</script><p>f(x; \alpha, \beta) = \frac{x^{\alpha-1}e^{-\frac{x}{\beta}}}{\beta^\alpha \Gamma(\alpha)}</p>
-<script type="math/tex; mode=display">伽马函数定义为：</script><p>\Gamma(\alpha) = \int_0^{\infty} t^{\alpha-1}e^{-t} dt</p>
-<script type="math/tex; mode=display">由于不同的学者有不同的习惯，这里可以设置参数$\lambda$和$r$, 且$r=\alpha$，$\lambda = \frac{1}{\beta}$，由此我们可以得到</script><p>f(x; r, \lambda) = \lambda^r \frac{x^{r-1}e^{-\lambda x}}{\Gamma(r)}</p>
-<script type="math/tex; mode=display">也就是教材上的公式。
-&emsp;当$r=1$时，Gamma函数为1，此时Gamma分布退化为指数分布，那么说明指数分布是Gamma分布的一个特例。
-&emsp;概率论中最重要的定理是大数定理和中心极限定理。中心极限定理又是最最重要的定理。
-大数定理说的是**样本数量越多，则其平均就越接近期望值**。也就是
-实验的次数越多，实验的结果越接近理论值。用数学表达式也很简单：
-$$\lim\limits_{n\rightarrow\infty}P(|\frac{S_n}{n}-p|<\epsilon)=1</script><p>&emsp;中心极限定理描述的是：当我们从一个大样本中抽取多个小样本并计算它们的均值时，这些均值的分布将趋向于正态分布，即便原始样本的分布不是正态分布。再比如说，多个正态分布的和是正态分布，多个均匀分布的和依然是正态分布。</p>
-<h2 id="随机变量的数字特征"><a href="#随机变量的数字特征" class="headerlink" title="随机变量的数字特征"></a>随机变量的数字特征</h2><h3 id="数学期望"><a href="#数学期望" class="headerlink" title="数学期望"></a>数学期望</h3><h4 id="期望定义"><a href="#期望定义" class="headerlink" title="期望定义"></a>期望定义</h4><p>&emsp;首先看看数学期望，数学期望也就是均值，对于离散型和连续型两种随机变量有不同的期望计算方法。<br>&emsp;期望代表了随机变量的加权平均，用于衡量随机变量的平均值（中心值）：</p>
-<script type="math/tex; mode=display">E(X)=\sum\limits_{i}\limits^\infty x_{i}p(x_{i})</script><script type="math/tex; mode=display">E(X)=\int_{-\infty}^{\infty}xf(x)dx</script><p>如果说对于两个独立的分布，那么其乘积XY的期望如下：</p>
-<script type="math/tex; mode=display">E(X)=\sum\limits_{i}\limits^\infty\sum\limits_{j}\limits^\infty x_{i}y_{j}p(x_{i},y_{j})</script><script type="math/tex; mode=display">E(X)=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}xyf(x,y)dydx$$不过，由于其独立性，后续会说到更简单的计算公式。
-
-#### 期望性质
-
-&emsp;数学期望也有诸多性质：
-1. $E[c]=c$ 若$a\le X \le b$，那么$a\le E(X) \le b$
-2. $E[cX]=cE[X]$
-3. $E[aX+bY]=aE[X]+bE[Y]$，$E(\sum\limits_{i=1}^na_{i}X_{i})=\sum\limits_{i=1}^na_{i}E[X_{i}]$
-4. 若X，Y独立，那么$E[XY]=E[X]E[Y]$
-
-### 方差
-
-#### 方差定义
-
-&emsp;接下来看看方差。方差描述的是独立变量偏离其期望值的程度。其计算公式如下：
-$$V(X)=E[X^2]-E^2[X]</script><h4 id="方差性质"><a href="#方差性质" class="headerlink" title="方差性质"></a>方差性质</h4><p>&emsp;方差也有诸多性质：</p>
-<ol>
-<li>$D(X)\ge 0$ 若$c$是常数，那么$D(c)=0$</li>
-<li>$D(cX+d)=c^2D(X)$</li>
-<li>$D(aX+bY)=a^2D(X)+b^2D(Y)+2abE(E-E[X])(Y-E[Y])$</li>
-<li>$D(X)=0\Leftrightarrow P\{X=c\}=1,c=E[X]$</li>
-</ol>
-<h4 id="Chebyshev不等式"><a href="#Chebyshev不等式" class="headerlink" title="Chebyshev不等式"></a>Chebyshev不等式</h4><p>&emsp;切比雪夫不等式提供了一个无需知道精确分布的情况下，评估随机变量的值偏离其期望值的程度。对于任何具有有限期望值 ( \mu ) 和有限非零方差 ( \sigma^2 ) 的随机变量 ( X )，以及任意的 ( k &gt; 0 )，切比雪夫不等式断言：</p>
-<script type="math/tex; mode=display">
-P(|X - \mu| \geq k\sigma) \leq \frac{1}{k^2}
-$$这意味着随机变量 \( X \) 的值落在距离其期望值 \( \mu \) 多于 \( k \) 倍标准差 \( \sigma \) 的概率不会超过 \( \frac{1}{k^2} \)。
-
-#### 协方差
-
-&emsp;协方差衡量两个随机变量之间的线性关系强度和方向。
-$$Cov(X,Y)=E(XY)-E[X]E[Y]</script><h4 id="相关系数"><a href="#相关系数" class="headerlink" title="相关系数"></a>相关系数</h4><p>&emsp;相关系数是协方差除以两个随机变量的标准差的乘积，用于衡量两个随机变量之间的线性相关程度。它是协方差和标准差的比值。</p>
-<script type="math/tex; mode=display">\rho(X, Y) = \frac{Cov(X, Y)}{\sigma_X \sigma_Y}\in [-1,1]</script><p>从这个公式我们可以看出，如果想要得到两个随机变量的相关性，相关系数是最好的参数。为什么呢？因为在协方差中，协方差很容易受到单个随机变量自己的离散程度的影响，而当两者都除以标准差后，这种差异就被去除了。</p>
-<h4 id="重要的数字特征"><a href="#重要的数字特征" class="headerlink" title="重要的数字特征"></a>重要的数字特征</h4><h5 id="二项分布-1"><a href="#二项分布-1" class="headerlink" title="二项分布"></a>二项分布</h5><ul>
-<li><strong>期望值</strong>: ( np )</li>
-<li><strong>方差</strong>: ( np(1-p) )</li>
+\frac{1}{b-a} &amp; \text{for } a \leq x \leq b, \\
+0 &amp; \text{otherwise}.
+\end{cases}\]</span> 则称随机变量X服从区间<span
+class="math inline">\([a,b]\)</span>上的均匀分布，记作<span
+class="math inline">\(X\sim
+U[a,b]\)</span>。均匀分布的分布函数如下所示： <span
+class="math display">\[F(x) =
+\begin{cases}
+0 &amp; \text{for } x &lt; a, \\
+\frac{x - a}{b - a} &amp; \text{for } a \leq x &lt; b, \\
+1 &amp; \text{for } x \geq b.
+\end{cases}\]</span> 易得，分布函数是由密度函数积分得来的。</p>
+<h4 id="指数分布">指数分布</h4>
+<p>随机变量X的密度函数为 <span class="math display">\[f(x; \lambda)
+=\begin{cases}\lambda e^{-\lambda x} &amp; x \geq 0, \\0 &amp; x &lt;
+0.\end{cases}\]</span> 并且分布函数为 <span class="math display">\[F(x;
+\lambda) =\begin{cases}1 - e^{-\lambda x} &amp; x \geq 0, \\0 &amp; x
+&lt; 0.\end{cases}\]</span> 其中，<span
+class="math inline">\(\lambda&gt;0\)</span>是常数，随机变量X服从参数为<span
+class="math inline">\(\lambda\)</span>的指数分布。指数分布具有无记忆性，也就是说若已知寿命长于S年，再过T年的概率是和年龄S无关的。</p>
+<h4 id="正态分布">正态分布</h4>
+<p>  <span class="math display">\[f(x; \mu, \sigma) =
+\frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}
+\left(\frac{x-\mu}{\sigma}\right)^2}\]</span>
+当正态分布的均值为0，方差为1时，我们认为此时<span
+class="math inline">\(X\)</span>服从标准正态分布。</p>
+<p><span class="math display">\[f(x) = \frac{1}{\sqrt{2\pi}}
+e^{-\frac{x^2}{2}}\]</span></p>
+<h4 id="gamma分布">Gamma分布</h4>
+<p><span class="math display">\[f(x; \alpha, \beta) =
+\frac{x^{\alpha-1}e^{-\frac{x}{\beta}}}{\beta^\alpha
+\Gamma(\alpha)}\]</span> 伽马函数定义为：</p>
+<p><span class="math display">\[\Gamma(\alpha) = \int_0^{\infty}
+t^{\alpha-1}e^{-t} dt\]</span>
+由于不同的学者有不同的习惯，这里可以设置参数<span
+class="math inline">\(\lambda\)</span>和<span
+class="math inline">\(r\)</span>, 且<span
+class="math inline">\(r=\alpha\)</span>，<span
+class="math inline">\(\lambda =
+\frac{1}{\beta}\)</span>，由此我们可以得到 <span
+class="math display">\[f(x; r, \lambda) = \lambda^r
+\frac{x^{r-1}e^{-\lambda x}}{\Gamma(r)}\]</span> 也就是教材上的公式。
+ 当<span
+class="math inline">\(r=1\)</span>时，Gamma函数为1，此时Gamma分布退化为指数分布，那么说明指数分布是Gamma分布的一个特例。
+ 概率论中最重要的定理是大数定理和中心极限定理。中心极限定理又是最最重要的定理。
+大数定理说的是<strong>样本数量越多，则其平均就越接近期望值</strong>。也就是
+实验的次数越多，实验的结果越接近理论值。用数学表达式也很简单： <span
+class="math display">\[\lim\limits_{n\rightarrow\infty}P(|\frac{S_n}{n}-p|&lt;\epsilon)=1\]</span>
+ 中心极限定理描述的是：当我们从一个大样本中抽取多个小样本并计算它们的均值时，这些均值的分布将趋向于正态分布，即便原始样本的分布不是正态分布。再比如说，多个正态分布的和是正态分布，多个均匀分布的和依然是正态分布。</p>
+<h2 id="随机变量的数字特征">随机变量的数字特征</h2>
+<h3 id="数学期望">数学期望</h3>
+<h4 id="期望定义">期望定义</h4>
+<p> 首先看看数学期望，数学期望也就是均值，对于离散型和连续型两种随机变量有不同的期望计算方法。
+ 期望代表了随机变量的加权平均，用于衡量随机变量的平均值（中心值）：
+<span class="math display">\[E(X)=\sum\limits_{i}\limits^\infty
+x_{i}p(x_{i})\]</span> <span
+class="math display">\[E(X)=\int_{-\infty}^{\infty}xf(x)dx\]</span>
+如果说对于两个独立的分布，那么其乘积XY的期望如下： <span
+class="math display">\[E(X)=\sum\limits_{i}\limits^\infty\sum\limits_{j}\limits^\infty
+x_{i}y_{j}p(x_{i},y_{j})\]</span> <span
+class="math display">\[E(X)=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}xyf(x,y)dydx\]</span>
+不过，由于其独立性，后续会说到更简单的计算公式。</p>
+<h4 id="期望性质">期望性质</h4>
+<p> 数学期望也有诸多性质： - <span class="math inline">\(E[c]=c\)</span>
+若<span class="math inline">\(a\le X \le b\)</span>，那么<span
+class="math inline">\(a\le E(X) \le b\)</span> - <span
+class="math inline">\(E[cX]=cE[X]\)</span> - <span
+class="math inline">\(E[aX+bY]=aE[X]+bE[Y]\)</span>，<span
+class="math inline">\(E(\sum\limits_{i=1}^na_{i}X_{i})=\sum\limits_{i=1}^na_{i}E[X_{i}]\)</span>
+- 若X，Y独立，那么<span
+class="math inline">\(E[XY]=E[X]E[Y]\)</span></p>
+<h3 id="方差">方差</h3>
+<h4 id="方差定义">方差定义</h4>
+<p> 接下来看看方差。方差描述的是独立变量偏离其期望值的程度。其计算公式如下：
+<span class="math display">\[V(X)=E[X^2]-E^2[X]\]</span></p>
+<h4 id="方差性质">方差性质</h4>
+<p> 方差也有诸多性质： - <span class="math inline">\(D(X)\ge 0\)</span>
+若<span class="math inline">\(c\)</span>是常数，那么<span
+class="math inline">\(D(c)=0\)</span> - <span
+class="math inline">\(D(cX+d)=c^2D(X)\)</span> - <span
+class="math inline">\(D(aX+bY)=a^2D(X)+b^2D(Y)+2abE(E-E[X])(Y-E[Y])\)</span>
+- <span class="math inline">\(D(X)=0\Leftrightarrow
+P\{X=c\}=1,c=E[X]\)</span></p>
+<h4 id="chebyshev不等式">Chebyshev不等式</h4>
+<p> 切比雪夫不等式提供了一个无需知道精确分布的情况下，评估随机变量的值偏离其期望值的程度。对于任何具有有限期望值
+$ $ 和有限非零方差 $ ^2 $ 的随机变量 $ X $，以及任意的 $ k &gt; 0
+$，切比雪夫不等式断言： <span class="math display">\[P(|X - \mu| \geq
+k\sigma) \leq \frac{1}{k^2}\]</span> 这意味着随机变量 $ X $
+的值落在距离其期望值 $ $ 多于 $ k $ 倍标准差 $ $ 的概率不会超过 $
+$。</p>
+<h4 id="协方差">协方差</h4>
+<p> 协方差衡量两个随机变量之间的线性关系强度和方向。 <span
+class="math display">\[Cov(X,Y)=E(XY)-E[X]E[Y]\]</span></p>
+<h4 id="相关系数">相关系数</h4>
+<p> 相关系数是协方差除以两个随机变量的标准差的乘积，用于衡量两个随机变量之间的线性相关程度。它是协方差和标准差的比值。
+<span class="math display">\[\rho(X, Y) = \frac{Cov(X, Y)}{\sigma_X
+\sigma_Y}\in [-1,1]\]</span>
+从这个公式我们可以看出，如果想要得到两个随机变量的相关性，相关系数是最好的参数。为什么呢？因为在协方差中，协方差很容易受到单个随机变量自己的离散程度的影响，而当两者都除以标准差后，这种差异就被去除了。</p>
+<h4 id="重要的数字特征">重要的数字特征</h4>
+<h5 id="二项分布-1">二项分布</h5>
+<ul>
+<li><strong>期望值</strong>: $ np $</li>
+<li><strong>方差</strong>: $ np(1-p) $</li>
 </ul>
-<h5 id="泊松分布"><a href="#泊松分布" class="headerlink" title="泊松分布"></a>泊松分布</h5><ul>
-<li><strong>期望值</strong>: ( \lambda )</li>
-<li><strong>方差</strong>: ( \lambda )</li>
+<h5 id="泊松分布">泊松分布</h5>
+<ul>
+<li><strong>期望值</strong>: $ $</li>
+<li><strong>方差</strong>: $$</li>
 </ul>
-<h5 id="均匀分布-1"><a href="#均匀分布-1" class="headerlink" title="均匀分布"></a>均匀分布</h5><ul>
-<li><strong>期望值</strong>: ( \frac{a + b}{2} )</li>
-<li><strong>方差</strong>: ( \frac{(b - a)^2}{12} )</li>
+<h5 id="均匀分布-1">均匀分布</h5>
+<ul>
+<li><strong>期望值</strong>: $ $</li>
+<li><strong>方差</strong>: $ $</li>
 </ul>
-<h5 id="指数分布"><a href="#指数分布" class="headerlink" title="指数分布"></a>指数分布</h5><ul>
-<li><strong>期望值</strong>: ( \frac{1}{\lambda} )</li>
-<li><strong>方差</strong>: ( \frac{1}{\lambda^2} )</li>
+<h5 id="指数分布-1">指数分布</h5>
+<ul>
+<li><strong>期望值</strong>: $ $</li>
+<li><strong>方差</strong>: $ $</li>
 </ul>
-<h5 id="均匀分布-2"><a href="#均匀分布-2" class="headerlink" title="均匀分布"></a>均匀分布</h5><ul>
-<li><strong>期望值</strong>: ( \frac{a + b}{2} )</li>
-<li><strong>方差</strong>: ( \frac{(b - a)^2}{12} )</li>
+<h5 id="均匀分布-2">均匀分布</h5>
+<ul>
+<li><strong>期望值</strong>: $ $</li>
+<li><strong>方差</strong>: $ $</li>
 </ul>
-<h5 id="正态分布"><a href="#正态分布" class="headerlink" title="正态分布"></a>正态分布</h5><ul>
-<li><strong>期望值</strong>: ( \mu )</li>
-<li><strong>方差</strong>: ( \sigma^2 )</li>
+<h5 id="正态分布-1">正态分布</h5>
+<ul>
+<li><strong>期望值</strong>: $ $</li>
+<li><strong>方差</strong>: $ ^2 $</li>
 </ul>
-<h5 id="Gamma分布"><a href="#Gamma分布" class="headerlink" title="Gamma分布"></a>Gamma分布</h5><ul>
-<li><strong>期望值</strong>: ( \alpha\beta )</li>
-<li><strong>方差</strong>: ( \alpha\beta^2 )</li>
+<h5 id="gamma分布-1">Gamma分布</h5>
+<ul>
+<li><strong>期望值</strong>: $ $</li>
+<li><strong>方差</strong>: $ ^2 $</li>
 </ul>
-<h4 id="随机变量的关系"><a href="#随机变量的关系" class="headerlink" title="随机变量的关系"></a>随机变量的关系</h4><p>&emsp;很好，有了这些数学特征作为指标，我们接下去来看看随机变量的之间的关系。随机变量之间的关系有：独立、相关和正交。</p>
-<h5 id="随机变量的独立性"><a href="#随机变量的独立性" class="headerlink" title="随机变量的独立性"></a>随机变量的独立性</h5><p>&emsp;对于两个随机变量X和Y，我们通常这样来判断其独立性，如果，对于连续型随机变量：</p>
-<script type="math/tex; mode=display">f(x,y)=f(x)f(y)</script><p>对于离散型随机变量：</p>
-<script type="math/tex; mode=display">P(XY)=P(X)P(Y)</script><p>&emsp;那么我们认为，X和Y是独立的（顺带一提，有监督模型的大前提是，独立同分布）。两个变量独立，意味着其取值互不影响，即一个随机变量的取值不提供关于另一个随机变量的任何信息。简而言之，两个随机变量X和Y相互独立意味着它们的联合分布等于各自的边缘分布的乘积，那么，我们在之前所做的XY之前的期望就有了更简单的做法：</p>
-<script type="math/tex; mode=display">E[XY]=E[X]E[Y]</script><h5 id="随机变量的相关性"><a href="#随机变量的相关性" class="headerlink" title="随机变量的相关性"></a>随机变量的相关性</h5><p>接下来看看相关性。相关性一般用相关系数来进行判断。如果（显然）：</p>
-<script type="math/tex; mode=display">\rho(X, Y)=0$$则两个随机变量是不相关的，反之如果相关系数为正，则两个随机变量为正相关，如果相关系数为负，两个随机变量为负相关。
+<h4 id="随机变量的关系">随机变量的关系</h4>
+<p> 很好，有了这些数学特征作为指标，我们接下去来看看随机变量的之间的关系。随机变量之间的关系有：独立、相关和正交。</p>
+<h5 id="随机变量的独立性">随机变量的独立性</h5>
+<p> 对于两个随机变量X和Y，我们通常这样来判断其独立性，如果，对于连续型随机变量：
+<span class="math display">\[f(x,y)=f(x)f(y)\]</span>
+对于离散型随机变量： <span
+class="math display">\[P(XY)=P(X)P(Y)\]</span>
+ 那么我们认为，X和Y是独立的（顺带一提，有监督模型的大前提是，独立同分布）。两个变量独立，意味着其取值互不影响，即一个随机变量的取值不提供关于另一个随机变量的任何信息。简而言之，两个随机变量X和Y相互独立意味着它们的联合分布等于各自的边缘分布的乘积，那么，我们在之前所做的XY之前的期望就有了更简单的做法：
+<span class="math display">\[E[XY]=E[X]E[Y]\]</span></p>
+<h5 id="随机变量的相关性">随机变量的相关性</h5>
+<p>接下来看看相关性。相关性一般用相关系数来进行判断。如果（显然）：
+<span class="math display">\[\rho(X, Y)=0\]</span>
+则两个随机变量是不相关的，反之如果相关系数为正，则两个随机变量为正相关，如果相关系数为负，两个随机变量为负相关。</p>
+<h5 id="随机变量的正交">随机变量的正交</h5>
+<p> 最后我们来看看什么叫随机变量之间的正交。随机变量的正交听起来很奇怪，广义上说，如果两个变量的内积是0，那么这两个变量就是正交的。同样的：
+<span class="math display">\[E[XY]=E[X]E[Y]=0\]</span>
+ 那么我们称X和Y是正交的，也就是联合期望为0,协方差也为0。所以，想要得到X和Y正交，必须是如果<span
+class="math inline">\(X&gt;0\)</span>，<span
+class="math inline">\(Y\)</span>需要有正有负，反之亦然。
+ 接下来看一些有意思是事情：既然<span class="math inline">\(\rho(X,
+Y)=0\)</span>，那么也就是<span
+class="math inline">\(Cov(X,Y)=0\)</span>，也就是： <span
+class="math display">\[E[XY]=E[X]E[Y]\]</span>
+也就是说，如果两个随机变量是不相关的，那么就会得到独立的性质<strong>而不是推出独立！</strong>，
+相反，如果两个随机变量是独立的，那么<span
+class="math inline">\(E[XY]-E[X]E[Y]=0\)</span>，也就是<span
+class="math inline">\(Cov(X,Y)=0\)</span>，推出了不相关。 <span
+class="math display">\[\textbf{独立}\rightarrow\textbf{不相关}\]</span>
+ 正交是最复杂的性质，可以这么思考：如果两个随机变量独立或不相关（因为独立和不相关具有相似性质，<span
+class="math inline">\(Cov(X,Y)=0\)</span>），且<span
+class="math inline">\(E[X]=0\quad or\quad
+E[Y]=0\)</span>时，我们认为X和Y是正交的。如果X和Y是正交的，且<span
+class="math inline">\(E[X]=0\quad or\quad
+E[Y]=0\)</span>，那么X和Y是不相关的。</p>
+<p> 总结一下就是： <span
+class="math display">\[\textbf{独立}\rightarrow\textbf{不相关}\xleftrightarrow{E[X]=0
+or E[Y]=0}\textbf{正交}\]</span> 双向箭头不知为何无法渲染。 ##
+多维随机变量</p>
+<h3 id="二维离散型随机向量">二维离散型随机向量</h3>
+<h4 id="定义">定义</h4>
+<p> 若存在二维随机向量<span
+class="math inline">\(\boldsymbol{X},\boldsymbol{Y}\)</span>的取值是有限个或可列无穷个数对，则称<span
+class="math inline">\(\boldsymbol{X},\boldsymbol{Y}\)</span>为<strong>二维离散型随机变量</strong>。
+<span class="math display">\[p_{ij}=P\{X=x_i,Y=y_i\}\]</span>
+为二维离散型随机变量的<strong>联合分布律</strong>。</p>
+<h4
+id="二维离散型随机向量的边缘分布函数">二维离散型随机向量的边缘分布函数</h4>
+<p>变量<span
+class="math inline">\(\boldsymbol{X}\)</span>关于二维随机变量<span
+class="math inline">\((\boldsymbol{X},\boldsymbol{Y})\)</span>的边缘分布。</p>
+<p><span class="math display">\[p_{i.}=\sum\limits_jp_{ij}\]</span>
+反之同理。</p>
+<h3 id="连续型随机向量">连续型随机向量</h3>
+<h4 id="定义-1">定义</h4>
+<p><span
+class="math display">\[F(x_1,\dots,x_n)=\int_{-\infty}^{x_1}\dots\int_{-\infty}^{x_n}f(u_1,\dots,u_n)du_1\dots
+d_n\]</span>
+显然，如果是二维的连续型随机向量，分布函数的物理含义是一块矩阵面积。
+ 如果要求<span
+class="math inline">\(X_k\)</span>边缘密度函数，则需要将剩下的<span
+class="math inline">\(k-1\)</span>个密度函数进行积分即可。</p>
+<h4 id="二维正态分布">二维正态分布</h4>
+<p> 二维正态分布的边缘分布是一维正态分布，且其分布与二维正态分布的参数r无关。</p>
 
-##### 随机变量的正交
+      
+    </div>
 
-&emsp;最后我们来看看什么叫随机变量之间的正交。随机变量的正交听起来很奇怪，广义上说，如果两个变量的内积是0，那么这两个变量就是正交的。同样的：
-$$E[XY]=E[X]E[Y]=0</script><p>&emsp;那么我们称X和Y是正交的，也就是联合期望为0,协方差也为0。所以，想要得到X和Y正交，必须是如果$X&gt;0$，$Y$需要有正有负，反之亦然。<br>&emsp;接下来看一些有意思是事情：既然$\rho(X, Y)=0$，那么也就是$Cov(X,Y)=0$，也就是：</p>
-<script type="math/tex; mode=display">E[XY]=E[X]E[Y]</script><p>也就是说，如果两个随机变量是不相关的，那么就会得到独立的性质<strong>而不是推出独立！</strong>，<br>相反，如果两个随机变量是独立的，那么$E[XY]-E[X]E[Y]=0$，也就是$Cov(X,Y)=0$，推出了不相关。</p>
-<script type="math/tex; mode=display">\textbf{独立}\rightarrow\textbf{不相关}</script><p>&emsp;正交是最复杂的性质，可以这么思考：如果两个随机变量独立或不相关（因为独立和不相关具有相似性质，$Cov(X,Y)=0$），且$E[X]=0\quad or\quad E[Y]=0$时，我们认为X和Y是正交的。如果X和Y是正交的，且$E[X]=0\quad or\quad E[Y]=0$，那么X和Y是不相关的。<br>&emsp;总结一下就是：</p>
-<script type="math/tex; mode=display">\textbf{独立}\rightarrow\textbf{不相关}\xleftrightarrow{E[X]=0 or E[Y]=0}\textbf{正交}</script><h2 id="多维随机变量"><a href="#多维随机变量" class="headerlink" title="多维随机变量"></a>多维随机变量</h2><h3 id="二维离散型随机向量"><a href="#二维离散型随机向量" class="headerlink" title="二维离散型随机向量"></a>二维离散型随机向量</h3><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p>&emsp;若存在二维随机向量(\boldsymbol{X},\boldsymbol{Y})的取值是有限个或可列无穷个数对，则称(\boldsymbol{X},\boldsymbol{Y})为<strong>二维离散型随机变量</strong>。</p>
-<script type="math/tex; mode=display">p_{ij}=P\{X=x_i,Y=y_i\}$$为二维离散型随机变量的**联合分布律**。
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
-#### 二维离散型随机向量的边缘分布函数
 
-变量\(\boldsymbol{X}\)关于二维随机变量\((\boldsymbol{X},\boldsymbol{Y})\)的边缘分布。
+  
 
-$$p_{i.}=\sum\limits_jp_{ij}$$反之同理。
 
-### 连续型随机向量
 
-#### 定义
+          </div>
+          
 
-$$F(x_1,\dots,x_n)=\int_{-\infty}^{x_1}\dots\int_{-\infty}^{x_n}f(u_1,\dots,u_n)du_1\dots d_n</script><p>显然，如果是二维的连续型随机向量，分布函数的物理含义是一块矩阵面积。<br>&emsp;如果要求(X_k)边缘密度函数，则需要将剩下的(k-1)个密度函数进行积分即可。</p>
-<h4 id="二维正态分布"><a href="#二维正态分布" class="headerlink" title="二维正态分布"></a>二维正态分布</h4><p>&emsp;二维正态分布的边缘分布是一维正态分布，且其分布与二维正态分布的参数r无关。</p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-11-05T07:39:52.570Z" title="2023/11/5 15:39:52">2023-11-05</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-11-05T07:39:52.570Z" title="2023/11/5 15:39:52">2023-11-05</time></span><span class="level-item">a minute read (About 123 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/11/05/hello-world/">Hello World</a></p><div class="content"><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-</div></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.png" alt="Your name"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Your name</p><p class="is-size-6 is-block">Your title</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Your location</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">2</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">0</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tag</p><a href="/tags"><p class="title">1</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/ppoffice" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/ppoffice"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li></ul></div></div></div><!--!--><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-11-05T08:18:43.000Z">2023-11-05</time></p><p class="title"><a href="/2023/11/05/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89/">概率论与随机过程（一）</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-11-05T07:39:52.570Z">2023-11-05</time></p><p class="title"><a href="/2023/11/05/hello-world/">Hello World</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2023/"><span class="level-start"><span class="level-item">2023</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/%E6%95%B0%E5%AD%A6/"><span class="tag">数学</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">Subscribe for updates</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Hyze&#039;s Learning" height="28"></a><p class="is-size-7"><span>&copy; 2023 Hyze Liang</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
-            article: {
-                highlight: {
-                    clipboard: true,
-                    fold: 'unfolded'
-                }
-            }
-        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
-      window.cookieconsent.initialise({
-        type: "info",
-        theme: "edgeless",
-        static: false,
-        position: "bottom-left",
-        content: {
-          message: "This website uses cookies to improve your experience.",
-          dismiss: "Got it!",
-          allow: "Allow cookies",
-          deny: "Decline",
-          link: "Learn more",
-          policy: "Cookie Policy",
-          href: "https://www.cookiesandyou.com/",
-        },
-        palette: {
-          popup: {
-            background: "#edeff5",
-            text: "#838391"
-          },
-          button: {
-            background: "#4b81e8"
-          },
-        },
-      });
-    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
-            if (typeof $.fn.lightGallery === 'function') {
-                $('.article').lightGallery({ selector: '.gallery-item' });
-            }
-            if (typeof $.fn.justifiedGallery === 'function') {
-                if ($('.justified-gallery > p > .gallery-item').length) {
-                    $('.justified-gallery > p > .gallery-item').unwrap();
-                }
-                $('.justified-gallery').justifiedGallery();
-            }
-        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
-            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
-        });</script></body></html>
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Hyze Liang</p>
+  <div class="site-description" itemprop="description">Start out mission</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Hyze Liang</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+</body>
+</html>
