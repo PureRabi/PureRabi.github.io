@@ -151,6 +151,130 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://purerabi.github.io/2023/11/05/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Hyze Liang">
+      <meta itemprop="description" content="Start out mission">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hyze's Learning">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/11/05/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/" class="post-title-link" itemprop="url">强化学习（一）</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2023-11-05 22:49:02 / Modified: 23:14:18" itemprop="dateCreated datePublished" datetime="2023-11-05T22:49:02+08:00">2023-11-05</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p> 预测任务和决策任务。预测任务是利用过去的数据对未来进行估计，或者利用已知数据对位置数据进行估计。而决策问题是利用过去的经验对每个当前状态做出行动决策。这种动作决策会影响后续的状态，并且会影响可能获得的奖励等。也就是
+说，预测不考虑对<strong>环境的改变</strong>，而决策<strong>直接改变环境</strong>。预测型任务常用<strong>有监督学习、无监督学习</strong>，决策型任务常用<strong>强化学习和模仿学习</strong>。强化学习是一种学习方法的描述，而不是模型的描述（所以会有深度强化学习）。预测问题和决策问题的深层次区别在于<strong>数据分布</strong>。对于模仿学习和强化学习而言，模仿学习是由示范者（专家）与环境互动生成一批数据，然后利用专家数据采用有监督的方式进行学习。模仿学习学得快，但是对于专家没示范过的情况就不知道如何应对。对于深度强化学习而言，RL最核心的部件就是价值函数和策略函数，利用深度神经网络进行价值函数和策略函数的近似，使得强化学习算法能以端到端的方式解决高维复杂问题。RL是一种通过从交互中学习来实现目标的计算方法。其智能体包含三个方面：</p>
+<ul>
+<li><p>目标：随着时间推移最大化积累奖励</p></li>
+<li><p>感知：在某种程度上感知环境的状态</p></li>
+<li><p>行动：可以采取行动来影响状态或者达到目标
+一个智能体在环境中会首先观察环境，通过观察（Observation）来获得当前环境的状态（state），并根据状态来选择动作（action），最后通过动作来获得奖励（reward）并改变当前状态。
+<img src="../强化学习（一）/Pic1.png" alt="图片" /></p>
+<p>强化学习的历史轨迹是一个状态、动作和奖励的连续序列，下面<span
+class="math inline">\((s_1,a_1,r_1,s_{2})\)</span>就是一个四元组，通常被称为一条经验数据或是一个数据点。
+<span
+class="math display">\[H_T=s_1,a_1,r_1,s_2,\dots,s_{T-1},a_{T-1},r_{T-1},s_T\]</span>
+策略（Policy）是学习智能体在特定时间的行为方式，是一种从状态到行动的映射，其分为</p></li>
+<li><p>确定性策略（Deterministic Policy）<span
+class="math inline">\(a=\pi(s)\)</span></p></li>
+<li><p>随机策略（Stochastic Policy） <span
+class="math inline">\(\pi(a|s)=P(A_t=a|S_t=S)\)</span></p>
+<p>奖励（reward）<span class="math inline">\(r(s,a)\quad or \quad
+r(s)\)</span>是一个定义强化学习目标的标量，能
+让智能体立即感知到什么是“好”的。 价值函数（Value
+Function）分为状态价值函数和状态动作价值函数，用来定义<strong>长期</strong>而言什么是好的。
+价值状态函数如下： <span
+class="math display">\[V_{\pi}(s)=\mathbb{E}_{\pi}[r_{t+1}+\gamma
+r_{t+2}+\gamma^2r_{t+3}+\dots|S_t=s]\]</span> 状态动作价值函数如下：
+<span
+class="math display">\[Q_{\pi}(s,a)=\mathbb{E}_{\pi}[r_{t+1}+\gamma
+r_{t+2}+\gamma^2r_{t+3}+\dots|S_t=s,A_t=a]\]</span>
+价值状态函数评估的是状态的好坏，状态动作对评估的是状态动作对的好坏。
+下面来看看环境的模型（Model），这是用于模拟环境的行为，由于在很多时候，状态的转移并不是一定的，所以需要一个状态转移概率来预测下一个状态。
+<span
+class="math display">\[\mathcal{P}^a_{ss^{&#39;}}=\mathbb{P}[S_{t+1}=s^{&#39;}|S_t=s,A_t=a]\]</span>
+当状态转移时，奖励函数会立刻给予一个奖励 <span
+class="math display">\[\mathcal{R}^a_s=\mathbb{E}[R_{t+1}|S_t=s,A_t=a]\]</span>
+最后是一个小分类 <img src="../强化学习（一）/Pic2.png" alt="图片" />
+最后看看强化学习的分类和前沿。第一种区分是基于价值还是基于策略</p></li>
+<li><p>基于价值：在给定状态下知道什么动作是好的什么动作是差的</p>
+<ul>
+<li>没有显示的价值函数</li>
+<li>策略可以基于价值函数按照贪心的选择导出</li>
+</ul></li>
+<li><p>基于策略：在给定状态下知道应该做出什么动作</p>
+<ul>
+<li>只有策略函数</li>
+<li>没有价值函数</li>
+</ul></li>
+<li><p>Actor-Critic：有教练在旁边点评</p>
+<ul>
+<li><p>既有策略函数</p></li>
+<li><p>又有价值函数</p>
+<p>第二种区分是有模型还是无模型</p></li>
+</ul></li>
+<li><p>无模型：智能体并不知道环境模型，只能在真实环境中试错学习</p>
+<ul>
+<li>学习只能通过与环境交互</li>
+<li>不断试错，利用环境反馈</li>
+</ul></li>
+<li><p>基于模型：</p>
+<ul>
+<li>环境模型是已知的（Given the model），可以在模型上进行计算</li>
+<li>真实的环境模型不知道，但是可以利用在交互过程中的采样对环境模型进行估计（
+Learn the model ）
+ 第三种分类是价值估计的方法。分为<strong>蒙特卡洛方法</strong>和<strong>时间差分</strong>。最后一种分类方法是训练数据与当前agent的关系。分为<strong>在线策略</strong>和<strong>离线策略</strong>。在线策略指的是用于学习当前策略的数据来自于当前agent策略与环境的互动采样，离线策略指的是用于学习当前策略的数据来自其他agent策略与环境的交互采样。注意：<strong>offline
+RL</strong>不是离线策略，而是指仅使用离线数据集学习agent的方法。 <img
+src="../强化学习（一）/Pic3.png" alt="图片" /></li>
+</ul></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://purerabi.github.io/2023/11/05/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -510,12 +634,12 @@ class="math inline">\(k-1\)</span>个密度函数进行积分即可。</p>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
