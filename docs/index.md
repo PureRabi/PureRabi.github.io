@@ -3,23 +3,18 @@
 layout: home
 
 hero:
-  name: "Hyze随笔"
+  name: "Hyze的随笔小屋"
   text: "Hyze Liang的个人仓库"
   tagline: 期待能产出更加Fancy的文章
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 科研随笔
+      link: /keyansuibi
     - theme: alt
-      text: API Examples
-      link: /api-examples
-
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      text: 万事屋
+      link: /wanshiwu
+  image:
+    src: /git.jpg
+    alt: Avatar
 ---
 

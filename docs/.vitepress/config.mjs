@@ -2,21 +2,22 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
-  description: "A VitePress Site",
+  title: "Hyze的随笔",
+  description: "想到什么写什么",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: '科研随笔', link: '/markdown-examples' }
+      { text: '主页', link: '/' },
+      { text: '科研随笔', link: '/keyansuibi' },
+      { text: '万事屋', link:'/wanshiwu'}
     ],
 
     sidebar: [
       {
-        text: '科研随笔',
+        text: '导航',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: '科研随笔', link: '/keyansuibi' },
+          { text: '万事屋', link:'/wanshiwu'}
         ]
       }
     ],
