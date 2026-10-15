@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title : "Academic Homepage"
+title : "Yongzhe Liang's Page"
 title_separator          : "-"
 name : &name ""
 description : &description "Personal academic homepage"
@@ -22,16 +22,16 @@ repository : "PureRabi/purerabi.github.io"
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
-  avatar: "avatar.svg"
-  name: ""
+  avatar: "lyz.jpg" # filename of author avatar image placed in /images/ for social media previews
+  name: "Yongzhe Liang"
   bio: ""
-  location: ""
-  employer: ""
-  email: ""
+  location: "Australia"
+  employer: "The University of Sydney"
+  email: "yongzhe.liang@sydney.edu.au"
   github: "PureRabi"
-  googlescholar: ""
-  orcid: ""
-  linkedin: ""
+  googlescholar: "https://scholar.google.com/citations?user=STsyE0sAAAAJ&hl=en"
+  orcid: "https://orcid.org/0009-0002-0159-7374"
+  linkedin: "https://www.linkedin.com/in/yongzhe-liang-325700442/"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:

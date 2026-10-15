@@ -1,23 +1,20 @@
 ---
 permalink: /
-title: "About"
+title: "Yongzhe Liang (梁永喆)"
 author_profile: true
 redirect_from:
   - /about/
 ---
 
-Welcome to my academic homepage.
+My name is Yongzhe Liang, a PhD student at The University of Sydney. Welcome to my academic homepage.
 
 ## Biography
+
+Coming soon.
 
 <!-- Add your biography, affiliation, and position here. -->
 
 ## Research interests
 
+Coming soon.
 <!-- Add your research interests below. -->
-
-## News
-
-<!-- Add your updates below. -->
-
-[Research]({{ '/research/' | relative_url }}) · [Publications]({{ '/publications/' | relative_url }}) · [CV]({{ '/cv/' | relative_url }})
