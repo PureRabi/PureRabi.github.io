@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title : "Academic Homepage | 学术主页"
+title : "Academic Homepage"
 title_separator          : "-"
 name : &name ""
-description : &description "Personal academic homepage | 个人学术主页"
+description : &description "Personal academic homepage"
 url : "https://purerabi.github.io"
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"

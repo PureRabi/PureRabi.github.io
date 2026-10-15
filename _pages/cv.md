@@ -1,23 +1,23 @@
 ---
-title: "Curriculum vitae / 简历"
+title: "Curriculum vitae"
 permalink: /cv/
 author_profile: true
 ---
 
-<!-- 上传 files/cv.pdf 后，可添加：[下载简历 / Download CV]({{ '/files/cv.pdf' | relative_url }}) -->
+<!-- After uploading files/cv.pdf, add: [Download CV]({{ '/files/cv.pdf' | relative_url }}) -->
 
-## 教育背景 / Education
+## Education
 
-<!-- 在这里填写 / Add details here. -->
+<!-- Add details here. -->
 
-## 学术经历 / Experience
+## Experience
 
-<!-- 在这里填写 / Add details here. -->
+<!-- Add details here. -->
 
-## 荣誉与奖励 / Honors and awards
+## Honors and awards
 
-<!-- 在这里填写 / Add details here. -->
+<!-- Add details here. -->
 
-## 学术服务 / Academic service
+## Academic service
 
-<!-- 在这里填写 / Add details here. -->
+<!-- Add details here. -->

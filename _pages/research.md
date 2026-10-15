@@ -1,13 +1,13 @@
 ---
-title: "Research / 研究"
+title: "Research"
 permalink: /research/
 author_profile: true
 ---
 
-## 研究方向 / Research areas
+## Research areas
 
-<!-- 请填写研究方向 / Add research areas here. -->
+<!-- Add research areas here. -->
 
-## 研究项目 / Projects
+## Projects
 
-<!-- 请填写项目名称、简介和链接 / Add project titles, descriptions, and links here. -->
+<!-- Add project titles, descriptions, and links here. -->

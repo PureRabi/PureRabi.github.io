@@ -1,11 +1,11 @@
 main:
-  - title: "About / 关于"
+  - title: "About"
     url: /
-  - title: "Research / 研究"
+  - title: "Research"
     url: /research/
-  - title: "Publications / 论文"
+  - title: "Publications"
     url: /publications/
-  - title: "CV / 简历"
+  - title: "CV"
     url: /cv/
-  - title: "Notes / 笔记"
+  - title: "Notes"
     url: /year-archive/
