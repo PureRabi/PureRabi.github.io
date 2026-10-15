@@ -1,7 +1,7 @@
 # 学术主页：部署与维护
 
 源码位置：`/Users/yzliang/Documents/MyBlog`。
-目标账号暂按已连接的 `PureRabi` 配置；目标仓库 `PureRabi/purerabi.github.io`，预计网址 `https://purerabi.github.io`。这是部署后的地址，目前尚未发布。
+目标账号按已连接的 `PureRabi` 配置；目标仓库 `PureRabi/purerabi.github.io`，预计网址 `https://purerabi.github.io`。这是部署后的地址，目前尚未发布。
 
 ## 当前状态
 
@@ -15,30 +15,23 @@
 2. 编辑器使用 [Visual Studio Code](https://code.visualstudio.com/)。Mac 已检测到安装；Windows 下载官方 Windows 安装包即可。用 File → Open Folder 打开源码目录。
 3. 日常编辑和上传不需要安装 Ruby、Node.js 或 Docker；构建由 GitHub Actions 完成。少量文字也可以直接在 GitHub 网页编辑。
 
-## 首次发布
+## 首次发布：只剩推送源码
 
-已确认你创建了公开空仓库 `PureRabi/PureRabi.github.io`（GitHub 仓库名不区分大小写）。本地配置的 origin 指向该仓库。以下保留两种首次发布方式；你已有仓库，应使用方案 B。
+已确认你创建了公开空仓库 `PureRabi/PureRabi.github.io`，并已将 Pages 的 Source 设为 GitHub Actions。本地分支为 `master`，origin 已配置。
 
-**方案 A：尚未创建远程仓库时，用 GitHub Desktop 发布本地项目。**
+助手通过当前 GitHub 连接写入 README 时，GitHub 返回 `403 Resource not accessible by integration`，没有文件上传成功。本机 Git 的 HTTPS 登录也尚未配置。这是目前阻止上传的原因。
 
-- GitHub Desktop → File → Add Local Repository → 选择 `Documents/MyBlog`。
-- 本地仓库已初始化，目标分支是 `main`。若有未提交修改，先填写说明并 Commit to main。
-- 点击 Publish repository；名称填 `purerabi.github.io`，选择账号 PureRabi，取消 Keep this code private，然后发布。
-- 如果 Desktop 因已配置 origin 而只显示 Push origin，请改用方案 B，先创建同名空仓库。
+推荐用 GitHub Desktop 完成首次登录和推送：
 
-**方案 B：已经通过网页创建了空仓库。**
+1. 安装 [GitHub Desktop](https://desktop.github.com/download/)，登录 PureRabi。
+2. File → Add Local Repository → 选择 `/Users/yzliang/Documents/MyBlog`。
+3. 本地源码已提交，直接 **Push origin**；如显示 Publish branch，则点击发布该分支。目标应是 `PureRabi/PureRabi.github.io`，不要发布到 Academic Pages 原模板仓库。
+4. 打开仓库 Actions → Build and deploy academic homepage。推送到 master 会自动开始构建。
+5. build 和 deploy 都成功后，从 Settings → Pages 点击 Visit site，或访问 `https://purerabi.github.io`。以实际部署结果为准，目前尚未确认上线。
 
-- 仓库必须叫 `purerabi.github.io`。使用 [创建仓库页面](https://github.com/new)，选 Public；不要添加 README、.gitignore 或 License。
-- GitHub Desktop 添加 `Documents/MyBlog`，提交初稿后 Push origin。
-- 若你是用 “Use this template” 创建的、仓库已有提交，请先提供链接；需要先整合远程历史，不能直接强制推送覆盖。
+也可以检查 GitHub → Settings → Applications 中用于 Codex/ChatGPT 的连接是否包含这个新仓库，再重新连接；若连接获得写权限，助手可继续上传。
 
-**启用 Pages（以上两种方案都需要）：**
-
-- 在目标仓库打开 Settings → Pages → Build and deployment → Source，选择 **GitHub Actions**。
-- 打开 Actions → Build and deploy academic homepage → Run workflow，选择 main 并运行。以后 push 到 main 会自动构建部署。
-- 查看 build 和 deploy 均成功后，再从 Settings → Pages 点击 Visit site。发布可能需要数分钟；以 Actions 和实际页面结果为准。
-
-当前 GitHub 连接若能访问新仓库，可继续由助手上传；Pages 设置仍可能需要你在网页完成。不要发送密码或访问令牌。
+不要把 `.git`、`_site` 或 `vendor` 文件夹手动上传到 GitHub；GitHub Desktop 会按仓库配置管理需要提交的文件。无需发送密码或访问令牌。
 
 ## Mac 和 Windows 同步
 
@@ -48,7 +41,7 @@ GitHub 远程仓库保存统一版本。Mac 使用 `Documents/MyBlog`；Windows 
 
 1. 开始修改前：Fetch origin；出现 Pull origin 时点击拉取。
 2. 用 VS Code 修改内容并保存。
-3. 在 Desktop 检查改动，填写说明，Commit to main。
+3. 在 Desktop 检查改动，填写说明，Commit to master。
 4. Push origin，确认上传成功后再换电脑。
 5. GitHub Actions 自动更新网页。
 
